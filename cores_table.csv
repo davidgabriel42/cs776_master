@@ -1,0 +1,4 @@
+Quantity of each Type,Type,vCPU,Memory: GiB,GPU,GPU memory: GiB,Total Cores
+6,Standard_NC12s_v3,12,224,2,32,3852
+1,Standard_NC24s_v3,24,448,4,64,2584
+1,D8s v3,8,32.00 GiB,0,n/a,8

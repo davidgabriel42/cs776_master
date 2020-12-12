@@ -1,0 +1,509 @@
+056203h9rnqp2l
+    description: Desktop Computer
+    product: Alienware Aurora R7 (0858)
+    vendor: Alienware
+    version: 1.0.11
+    serial: H9RNQP2
+    width: 64 bits
+    capabilities: smbios-3.1 dmi-3.1 vsyscall32
+    configuration: boot=normal chassis=desktop family=Alienware sku=0858 uuid=44454C4C-3900-1052-804E-C8C04F515032
+  *-core
+       description: Motherboard
+       product: 0VDT73
+       vendor: Alienware
+       physical id: 0
+       version: A00
+       serial: .H9RNQP2.CNPE100844001H.
+       slot: Default string
+     *-firmware
+          description: BIOS
+          vendor: Alienware
+          physical id: 0
+          version: 1.0.11
+          date: 05/17/2018
+          size: 64KiB
+          capacity: 15MiB
+          capabilities: pci pnp upgrade shadowing cdboot bootselect edd int13floppy1200 int13floppy720 int13floppy2880 int5printscreen int14serial int17printer acpi usb biosbootspecification netboot uefi
+     *-memory
+          description: System Memory
+          physical id: 2d
+          slot: System board or motherboard
+          size: 32GiB
+        *-bank:0
+             description: DIMM [empty]
+             physical id: 0
+             slot: ChannelA-DIMM0
+        *-bank:1
+             description: DIMM Synchronous 2666 MHz (0.4 ns)
+             product: HMA82GU6CJR8N-VK
+             vendor: 0000AD010000
+             physical id: 1
+             serial: 5246FCE2
+             slot: ChannelA-DIMM1
+             size: 16GiB
+             width: 64 bits
+             clock: 2666MHz (0.4ns)
+        *-bank:2
+             description: DIMM [empty]
+             physical id: 2
+             slot: ChannelB-DIMM0
+        *-bank:3
+             description: DIMM Synchronous 2666 MHz (0.4 ns)
+             product: HMA82GU6CJR8N-VK
+             vendor: 0000AD010000
+             physical id: 3
+             serial: 5246FB0C
+             slot: ChannelB-DIMM1
+             size: 16GiB
+             width: 64 bits
+             clock: 2666MHz (0.4ns)
+     *-cache:0
+          description: L1 cache
+          physical id: 33
+          slot: L1 Cache
+          size: 384KiB
+          capacity: 384KiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=1
+     *-cache:1
+          description: L2 cache
+          physical id: 34
+          slot: L2 Cache
+          size: 1536KiB
+          capacity: 1536KiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=2
+     *-cache:2
+          description: L3 cache
+          physical id: 35
+          slot: L3 Cache
+          size: 12MiB
+          capacity: 12MiB
+          capabilities: synchronous internal write-back unified
+          configuration: level=3
+     *-cpu
+          description: CPU
+          product: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+          vendor: Intel Corp.
+          physical id: 36
+          bus info: cpu@0
+          version: Intel(R) Core(TM) i7-8700K CPU @ 3.70GHz
+          serial: To Be Filled By O.E.M.
+          slot: U3E1
+          size: 4082MHz
+          capacity: 4700MHz
+          width: 64 bits
+          clock: 100MHz
+          capabilities: x86-64 fpu fpu_exception wp vme de pse tsc msr pae mce cx8 apic sep mtrr pge mca cmov pat pse36 clflush dts acpi mmx fxsr sse sse2 ss ht tm pbe syscall nx pdpe1gb rdtscp constant_tsc art arch_perfmon pebs bts rep_good nopl xtopology nonstop_tsc cpuid aperfmperf pni pclmulqdq dtes64 monitor ds_cpl vmx smx est tm2 ssse3 sdbg fma cx16 xtpr pdcm pcid sse4_1 sse4_2 x2apic movbe popcnt tsc_deadline_timer aes xsave avx f16c rdrand lahf_lm abm 3dnowprefetch cpuid_fault epb invpcid_single pti ssbd ibrs ibpb stibp tpr_shadow vnmi flexpriority ept vpid fsgsbase tsc_adjust bmi1 hle avx2 smep bmi2 erms invpcid rtm mpx rdseed adx smap clflushopt intel_pt xsaveopt xsavec xgetbv1 xsaves dtherm ida arat pln pts hwp hwp_notify hwp_act_window hwp_epp md_clear flush_l1d cpufreq
+          configuration: cores=6 enabledcores=6 threads=12
+     *-pci
+          description: Host bridge
+          product: 8th Gen Core Processor Host Bridge/DRAM Registers
+          vendor: Intel Corporation
+          physical id: 100
+          bus info: pci@0000:00:00.0
+          version: 07
+          width: 32 bits
+          clock: 33MHz
+          configuration: driver=skl_uncore
+          resources: irq:0
+        *-pci:0
+             description: PCI bridge
+             product: Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x16)
+             vendor: Intel Corporation
+             physical id: 1
+             bus info: pci@0000:00:01.0
+             version: 07
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm msi pciexpress normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16 ioport:e000(size=4096) memory:eb000000-ec0fffff ioport:a0000000(size=301989888)
+           *-display
+                description: VGA compatible controller
+                product: GP104 [GeForce GTX 1080]
+                vendor: NVIDIA Corporation
+                physical id: 0
+                bus info: pci@0000:01:00.0
+                version: a1
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress vga_controller bus_master cap_list rom
+                configuration: driver=nvidia latency=0
+                resources: irq:148 memory:eb000000-ebffffff memory:a0000000-afffffff memory:b0000000-b1ffffff ioport:e000(size=128) memory:c0000-dffff
+           *-multimedia
+                description: Audio device
+                product: GP104 High Definition Audio Controller
+                vendor: NVIDIA Corporation
+                physical id: 0.1
+                bus info: pci@0000:01:00.1
+                version: a1
+                width: 32 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list
+                configuration: driver=snd_hda_intel latency=0
+                resources: irq:17 memory:ec080000-ec083fff
+        *-pci:1
+             description: PCI bridge
+             product: Xeon E3-1200 v5/E3-1500 v5/6th Gen Core Processor PCIe Controller (x8)
+             vendor: Intel Corporation
+             physical id: 1.1
+             bus info: pci@0000:00:01.1
+             version: 07
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pm msi pciexpress normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:16
+        *-display
+             description: Display controller
+             product: Intel Corporation
+             vendor: Intel Corporation
+             physical id: 2
+             bus info: pci@0000:00:02.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pciexpress msi pm bus_master cap_list
+             configuration: driver=i915 latency=0
+             resources: iomemory:2f0-2ef irq:136 memory:2ffe000000-2ffeffffff memory:90000000-9fffffff ioport:f000(size=64)
+        *-generic:0 UNCLAIMED
+             description: System peripheral
+             product: Xeon E3-1200 v5/v6 / E3-1500 v5 / 6th/7th Gen Core Processor Gaussian Mixture Model
+             vendor: Intel Corporation
+             physical id: 8
+             bus info: pci@0000:00:08.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: msi pm bus_master cap_list
+             configuration: latency=0
+             resources: iomemory:2f0-2ef memory:2fff029000-2fff029fff
+        *-usb
+             description: USB controller
+             product: 200 Series/Z370 Chipset Family USB 3.0 xHCI Controller
+             vendor: Intel Corporation
+             physical id: 14
+             bus info: pci@0000:00:14.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi xhci bus_master cap_list
+             configuration: driver=xhci_hcd latency=0
+             resources: iomemory:2f0-2ef irq:125 memory:2fff010000-2fff01ffff
+           *-usbhost:0
+                product: xHCI Host Controller
+                vendor: Linux 4.15.0-112-generic xhci-hcd
+                physical id: 0
+                bus info: usb@1
+                logical name: usb1
+                version: 4.15
+                capabilities: usb-2.00
+                configuration: driver=hub slots=16 speed=480Mbit/s
+              *-usb:0
+                   description: Bluetooth wireless interface
+                   vendor: Atheros Communications, Inc.
+                   physical id: 8
+                   bus info: usb@1:8
+                   version: 0.01
+                   capabilities: bluetooth usb-2.01
+                   configuration: driver=btusb maxpower=100mA speed=12Mbit/s
+              *-usb:1
+                   description: Keyboard
+                   product: Dell KB216 Wired Keyboard
+                   vendor: Dell Computer Corp.
+                   physical id: 9
+                   bus info: usb@1:9
+                   version: 1.08
+                   capabilities: usb-1.10
+                   configuration: driver=usbhid maxpower=100mA speed=2Mbit/s
+              *-usb:2
+                   description: Mouse
+                   product: Dell USB Optical Mouse
+                   vendor: Dell
+                   physical id: b
+                   bus info: usb@1:b
+                   version: 43.01
+                   capabilities: usb-2.00
+                   configuration: driver=usbhid maxpower=100mA speed=2Mbit/s
+           *-usbhost:1
+                product: xHCI Host Controller
+                vendor: Linux 4.15.0-112-generic xhci-hcd
+                physical id: 1
+                bus info: usb@2
+                logical name: usb2
+                version: 4.15
+                capabilities: usb-3.00
+                configuration: driver=hub slots=10 speed=5000Mbit/s
+        *-generic:1
+             description: Signal processing controller
+             product: 200 Series PCH Serial IO I2C Controller #0
+             vendor: Intel Corporation
+             physical id: 15
+             bus info: pci@0000:00:15.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: iomemory:2f0-2ef irq:16 memory:2fff028000-2fff028fff
+        *-generic:2
+             description: Signal processing controller
+             product: 200 Series PCH Serial IO I2C Controller #1
+             vendor: Intel Corporation
+             physical id: 15.1
+             bus info: pci@0000:00:15.1
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: iomemory:2f0-2ef irq:17 memory:2fff027000-2fff027fff
+        *-communication
+             description: Communication controller
+             product: 200 Series PCH CSME HECI #1
+             vendor: Intel Corporation
+             physical id: 16
+             bus info: pci@0000:00:16.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=mei_me latency=0
+             resources: iomemory:2f0-2ef irq:149 memory:2fff026000-2fff026fff
+        *-storage
+             description: RAID bus controller
+             product: SATA Controller [RAID mode]
+             vendor: Intel Corporation
+             physical id: 17
+             bus info: pci@0000:00:17.0
+             version: 00
+             width: 32 bits
+             clock: 66MHz
+             capabilities: storage msi pm bus_master cap_list
+             configuration: driver=ahci latency=0
+             resources: irq:134 memory:ec104000-ec105fff memory:ec107000-ec1070ff ioport:f090(size=8) ioport:f080(size=4) ioport:f060(size=32) memory:ec106000-ec1067ff
+        *-pci:2
+             description: PCI bridge
+             product: 200 Series PCH PCI Express Root Port #17
+             vendor: Intel Corporation
+             physical id: 1b
+             bus info: pci@0000:00:1b.0
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:122 memory:ec600000-ec6fffff
+           *-storage
+                description: Non-Volatile memory controller
+                product: SK hynix
+                vendor: SK hynix
+                physical id: 0
+                bus info: pci@0000:03:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: storage pm pciexpress msix nvm_express bus_master cap_list
+                configuration: driver=nvme latency=0
+                resources: irq:16 memory:ec600000-ec603fff
+        *-pci:3
+             description: PCI bridge
+             product: 200 Series PCH PCI Express Root Port #2
+             vendor: Intel Corporation
+             physical id: 1c
+             bus info: pci@0000:00:1c.0
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:17 memory:ec500000-ec5fffff
+           *-usb
+                description: USB controller
+                product: ASM1142 USB 3.1 Host Controller
+                vendor: ASMedia Technology Inc.
+                physical id: 0
+                bus info: pci@0000:04:00.0
+                version: 00
+                width: 64 bits
+                clock: 33MHz
+                capabilities: msi msix pm pciexpress xhci bus_master cap_list
+                configuration: driver=xhci_hcd latency=0
+                resources: irq:17 memory:ec500000-ec507fff
+              *-usbhost:0
+                   product: xHCI Host Controller
+                   vendor: Linux 4.15.0-112-generic xhci-hcd
+                   physical id: 0
+                   bus info: usb@3
+                   logical name: usb3
+                   version: 4.15
+                   capabilities: usb-2.00
+                   configuration: driver=hub slots=2 speed=480Mbit/s
+              *-usbhost:1
+                   product: xHCI Host Controller
+                   vendor: Linux 4.15.0-112-generic xhci-hcd
+                   physical id: 1
+                   bus info: usb@4
+                   logical name: usb4
+                   version: 4.15
+                   capabilities: usb-3.10
+                   configuration: driver=hub slots=2 speed=10000Mbit/s
+        *-pci:4
+             description: PCI bridge
+             product: 200 Series PCH PCI Express Root Port #3
+             vendor: Intel Corporation
+             physical id: 1c.2
+             bus info: pci@0000:00:1c.2
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:123 memory:ec200000-ec3fffff
+           *-network
+                description: Wireless interface
+                product: QCA9377 802.11ac Wireless Network Adapter
+                vendor: Qualcomm Atheros
+                physical id: 0
+                bus info: pci@0000:05:00.0
+                logical name: wlp5s0
+                version: 31
+                serial: 90:32:4b:76:f2:7d
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm msi pciexpress bus_master cap_list ethernet physical wireless
+                configuration: broadcast=yes driver=ath10k_pci driverversion=4.15.0-112-generic firmware=WLAN.TF.1.0-00267-1 latency=0 link=no multicast=yes wireless=IEEE 802.11
+                resources: irq:151 memory:ec200000-ec3fffff
+        *-pci:5
+             description: PCI bridge
+             product: 200 Series PCH PCI Express Root Port #4
+             vendor: Intel Corporation
+             physical id: 1c.3
+             bus info: pci@0000:00:1c.3
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:19 ioport:d000(size=4096) memory:ec400000-ec4fffff
+           *-network
+                description: Ethernet interface
+                product: Killer E2500 Gigabit Ethernet Controller
+                vendor: Qualcomm Atheros
+                physical id: 0
+                bus info: pci@0000:06:00.0
+                logical name: enp6s0
+                version: 10
+                serial: d8:9e:f3:92:33:14
+                size: 1Gbit/s
+                capacity: 1Gbit/s
+                width: 64 bits
+                clock: 33MHz
+                capabilities: pm pciexpress msi msix bus_master cap_list ethernet physical tp 10bt 10bt-fd 100bt 100bt-fd 1000bt-fd autonegotiation
+                configuration: autonegotiation=on broadcast=yes driver=alx duplex=full ip=134.197.95.72 latency=0 link=yes multicast=yes port=twisted pair speed=1Gbit/s
+                resources: irq:19 memory:ec400000-ec43ffff ioport:d000(size=128)
+        *-pci:6
+             description: PCI bridge
+             product: 200 Series PCH PCI Express Root Port #9
+             vendor: Intel Corporation
+             physical id: 1d
+             bus info: pci@0000:00:1d.0
+             version: f0
+             width: 32 bits
+             clock: 33MHz
+             capabilities: pci pciexpress msi pm normal_decode bus_master cap_list
+             configuration: driver=pcieport
+             resources: irq:124 ioport:2000(size=4096) memory:bc000000-ea0fffff ioport:2fb0000000(size=1241513984)
+        *-generic:3
+             description: Signal processing controller
+             product: 200 Series/Z370 Chipset Family Serial IO UART Controller #0
+             vendor: Intel Corporation
+             physical id: 1e
+             bus info: pci@0000:00:1e.0
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm bus_master cap_list
+             configuration: driver=intel-lpss latency=0
+             resources: iomemory:2f0-2ef irq:20 memory:2fff025000-2fff025fff
+        *-isa
+             description: ISA bridge
+             product: Z370 Chipset LPC/eSPI Controller
+             vendor: Intel Corporation
+             physical id: 1f
+             bus info: pci@0000:00:1f.0
+             version: 00
+             width: 32 bits
+             clock: 33MHz
+             capabilities: isa bus_master
+             configuration: latency=0
+        *-memory UNCLAIMED
+             description: Memory controller
+             product: 200 Series/Z370 Chipset Family Power Management Controller
+             vendor: Intel Corporation
+             physical id: 1f.2
+             bus info: pci@0000:00:1f.2
+             version: 00
+             width: 32 bits
+             clock: 33MHz (30.3ns)
+             capabilities: bus_master
+             configuration: latency=0
+             resources: memory:ec100000-ec103fff
+        *-multimedia
+             description: Audio device
+             product: 200 Series PCH HD Audio
+             vendor: Intel Corporation
+             physical id: 1f.3
+             bus info: pci@0000:00:1f.3
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             capabilities: pm msi bus_master cap_list
+             configuration: driver=snd_hda_intel latency=32
+             resources: iomemory:2f0-2ef iomemory:2f0-2ef irq:150 memory:2fff020000-2fff023fff memory:2fff000000-2fff00ffff
+        *-serial UNCLAIMED
+             description: SMBus
+             product: 200 Series/Z370 Chipset Family SMBus Controller
+             vendor: Intel Corporation
+             physical id: 1f.4
+             bus info: pci@0000:00:1f.4
+             version: 00
+             width: 64 bits
+             clock: 33MHz
+             configuration: latency=0
+             resources: iomemory:2f0-2ef memory:2fff024000-2fff0240ff ioport:f040(size=32)
+     *-scsi
+          physical id: 1
+          logical name: scsi0
+          capabilities: emulated
+        *-disk
+             description: ATA Disk
+             product: ST1000DM010-2EP1
+             vendor: Seagate
+             physical id: 0.0.0
+             bus info: scsi@0:0.0.0
+             logical name: /dev/sda
+             version: CC43
+             serial: Z9ASD2H3
+             size: 931GiB (1TB)
+             capabilities: partitioned partitioned:dos
+             configuration: ansiversion=5 logicalsectorsize=512 sectorsize=4096 signature=b3b499d5
+           *-volume:0
+                description: Windows NTFS volume
+                physical id: 1
+                bus info: scsi@0:0.0.0,1
+                logical name: /dev/sda1
+                version: 3.1
+                serial: f4c53002-58f2-fa49-b1f2-1ee1ce2b403e
+                size: 465GiB
+                capacity: 465GiB
+                capabilities: primary ntfs initialized
+                configuration: clustersize=4096 created=2019-07-25 15:00:47 filesystem=ntfs label=New Volume modified_by_chkdsk=true mounted_on_nt4=true resize_log_file=true state=dirty upgrade_on_mount=true
+           *-volume:1
+                description: Linux filesystem partition
+                physical id: 2
+                bus info: scsi@0:0.0.0,2
+                logical name: /dev/sda2
+                capacity: 465GiB
+                capabilities: primary
